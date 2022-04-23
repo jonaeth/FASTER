@@ -28,6 +28,9 @@ struct Community{
     ~Community();
 
     string print();
+<<<<<<< HEAD
+=======
 
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
 };
 #endif //FASTER_COMMUNITY_H

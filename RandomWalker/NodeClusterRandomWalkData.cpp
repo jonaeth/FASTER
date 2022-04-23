@@ -16,7 +16,11 @@ vector<pair<string, double> > sort_probabilities(map<string, int>& M, size_t num
     // to vector of pairs
     V.reserve(M.size());
     for (auto& it : M) { // TODO check that Map doesn't change
+<<<<<<< HEAD
+        V.emplace_back(it.first, it.second/(double)number_of_walks); // TODO Check if correct and efficient
+=======
         V.emplace_back(it.first, it.second/number_of_walks); // TODO Check if correct and efficient
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
     }
 
     // Sort using comparator function
@@ -44,6 +48,11 @@ NodeClusterRandomWalkData::NodeClusterRandomWalkData(NodeRandomWalkData &nodes_r
         this->total_count += path_count.second;
     }
 }
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
 NodeClusterRandomWalkData::~NodeClusterRandomWalkData() = default;
 
 void NodeClusterRandomWalkData::merge(NodeClusterRandomWalkData other) {
@@ -76,4 +85,7 @@ set<size_t> NodeClusterRandomWalkData::get_node_ids() {
     return this->node_ids;
 }
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8

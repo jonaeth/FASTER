@@ -18,7 +18,11 @@ NodeRandomWalkData::NodeRandomWalkData(size_t node_id, string node_type) {
 NodeRandomWalkData::~NodeRandomWalkData() {
 
 }
+<<<<<<< HEAD
+bool NodeRandomWalkData::operator<(const NodeRandomWalkData &other) const {
+=======
 bool NodeRandomWalkData::operator<(const NodeRandomWalkData &other) const{
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
     if (get_average_hitting_time() == other.get_average_hitting_time()){
         return this->get_node_id() < other.get_node_id();
     }else{
@@ -26,7 +30,11 @@ bool NodeRandomWalkData::operator<(const NodeRandomWalkData &other) const{
     }
 }
 
+<<<<<<< HEAD
+double NodeRandomWalkData::get_average_hitting_time() const{
+=======
 double NodeRandomWalkData::get_average_hitting_time() const {
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
     return this->average_hitting_time;
 }
 
@@ -63,16 +71,36 @@ map<string, int> NodeRandomWalkData::get_path_counts() {
 }
 
 
+<<<<<<< HEAD
+vector<pair<string, int> > NodeRandomWalkData::get_top_paths(size_t number_of_paths, size_t path_length) {
+    vector<pair<string, int> > paths = sort(this->path_counts);
+    vector<pair<string, int> > top_paths;
+
+    vector<pair<string, int> > paths_of_path_length;
+    for (auto path_pair: paths) {
+        if (count(path_pair.first.begin(), path_pair.first.end(),',') == path_length) {
+            paths_of_path_length.emplace_back(path_pair);
+        }
+    }
+
+    if(number_of_paths < path_counts.size()){
+        top_paths = vector<pair<string, int> >(paths_of_path_length.begin(),
+                                               paths_of_path_length.begin()+number_of_paths);//[:max_num_paths]
+=======
 vector<pair<string, int> > NodeRandomWalkData::get_top_paths(size_t number_of_paths) {
     vector<pair<string, int> > paths = sort(this->path_counts);
     vector<pair<string, int> > top_paths;
     if(number_of_paths < path_counts.size()){
         top_paths = vector<pair<string, int> >(paths.begin(), paths.begin()+number_of_paths);//[:number_of_paths]
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
     }else{
         top_paths = paths;
     }
 
+<<<<<<< HEAD
+=======
     //TODO Check why as_list was here and then never called and yet needed?
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
     return top_paths;
 }
 
@@ -91,5 +119,8 @@ string NodeRandomWalkData::get_node_type() {
 
 
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8

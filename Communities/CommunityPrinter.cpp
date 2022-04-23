@@ -14,7 +14,11 @@ CommunityPrinter::CommunityPrinter(vector<Communities> communities, HyperGraph o
     }
 
     //TODO needs to break if true
+<<<<<<< HEAD
+    if(this->number_of_communities > original_hypergraph.number_of_nodes()){
+=======
     if(this->number_of_communities <= original_hypergraph.number_of_nodes()){
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
         cout<<"Incorrect hypergraph provided for original_hypergraph. More communities found (";
         cout<<this->number_of_communities;
         cout<<") than the number of node in original_hypergraph (";
@@ -30,7 +34,11 @@ CommunityPrinter::~CommunityPrinter() = default;
 void CommunityPrinter::write_ldb_file(string filename) {
     filename += ".ldb";
     ofstream file;
+<<<<<<< HEAD
+    file.open(filename);
+=======
     file.open(filename, std::ios_base::app);
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
     this->write_header(file);
     size_t hypergraph_number_temp{0};
     for(auto communities: this->communities_vector){
@@ -50,7 +58,11 @@ void CommunityPrinter::write_ldb_file(string filename) {
 void CommunityPrinter::write_uldb_file(string filename) {
     filename += ".uldb";
     ofstream file;
+<<<<<<< HEAD
+    file.open(filename);
+=======
     file.open(filename, std::ios_base::app);
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
     this->write_header(file);
     size_t hypergraph_number_temp{0};
     for(auto communities: this->communities_vector){
@@ -70,7 +82,11 @@ void CommunityPrinter::write_uldb_file(string filename) {
 void CommunityPrinter::write_srcnclust_file(string filename) {
     filename += ".srcnclusts";
     ofstream file;
+<<<<<<< HEAD
+    file.open(filename);
+=======
     file.open(filename, std::ios_base::app);
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
     this->write_header(file);
     size_t hypergraph_number_temp{0};
     for(auto communities: this->communities_vector){
@@ -183,7 +199,12 @@ set<string> CommunityPrinter::get_atoms_of_node_in_community(size_t node,
     for(auto &singleton_edges: hypergraph_of_community.get_singleton_edges()){
         if(community.nodes.find(singleton_edges.first) != community.nodes.end()){
             for(auto &predicate: singleton_edges.second){
+<<<<<<< HEAD
+                vector<size_t> singleton;
+                singleton.emplace_back(singleton_edges.first);
+=======
                 vector<size_t> singleton(singleton_edges.first);
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
                 atoms.insert(this->get_atom_for_edge(predicate, singleton, string_type));
             }
         }
@@ -194,7 +215,11 @@ set<string> CommunityPrinter::get_atoms_of_node_in_community(size_t node,
 string CommunityPrinter::get_atom_for_edge(string edge_predicate, vector<size_t> &nodes_of_edge, string string_type) {
     string atom = edge_predicate + "(";
     vector<string> node_names = get_node_names(nodes_of_edge, string_type);
+<<<<<<< HEAD
+    atom += boost::algorithm::join(node_names, ",") + ")";
+=======
     edge_predicate += boost::algorithm::join(node_names, ",") + ")";
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
     return atom;
 }
 
@@ -250,8 +275,13 @@ void CommunityPrinter::get_node_to_ldb_string_map() {
 }
 
 void CommunityPrinter::write_files(string filename) {
+<<<<<<< HEAD
+    this->write_uldb_file(filename);
+    this->write_ldb_file(filename);
+=======
     this->write_ldb_file(filename);
     this->write_uldb_file(filename);
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
     this->write_srcnclust_file(filename);
 
 }

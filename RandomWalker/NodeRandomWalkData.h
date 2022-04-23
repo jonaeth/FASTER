@@ -51,7 +51,11 @@ public:
 
     size_t get_count_of_nth_path(size_t n);
 
+<<<<<<< HEAD
+    vector<pair<string, int> > get_top_paths(size_t number_of_paths, size_t path_length);
+=======
     vector<pair<string, int> > get_top_paths(size_t number_of_paths);
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
 
 };
 #endif //FASTER_NODERANDOMWALKDATA_H

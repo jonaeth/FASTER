@@ -1,0 +1,6 @@
+director(person)
+actor(person)
+movie(title, person)
+gender(person, gender)
+genre(person, movie_genre)
+workedUnder(person, person)

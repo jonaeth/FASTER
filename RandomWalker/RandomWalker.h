@@ -19,7 +19,10 @@ using namespace std;
 struct RandomWalkerConfig{
     double epsilon;
     size_t max_num_paths;
+<<<<<<< HEAD
+=======
     double alpha_sym;
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
     size_t pca_dim;
     size_t clustering_method_threshold;
     size_t max_path_length;
@@ -30,11 +33,17 @@ struct RandomWalkerConfig{
 class RandomWalker{
 private:
     HyperGraph hypergraph;
+<<<<<<< HEAD
+    int max_num_paths{};
+    int max_path_length{};
+    double epsilon{};
+=======
     int number_of_paths{};
     int max_path_length{};
     double epsilon{};
     double k{};
     double alpha_sym{};
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
     double fraction_of_max_walks_to_always_complete{};
     int length_of_walk{};
     int number_of_walks_for_truncated_hitting_times{};
@@ -42,7 +51,11 @@ private:
     int number_of_walks_for_path_distribution{};
     int max_number_of_walks{};
     int number_of_walks_ran{};
+<<<<<<< HEAD
+    mt19937 rng;
+=======
     double theta_sym{};
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
 
     size_t get_length_of_random_walks();
     size_t get_number_of_walks_for_truncated_hitting_times(size_t walk_length);

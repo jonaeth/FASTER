@@ -10,7 +10,10 @@ using namespace Eigen;
 using Eigen::MatrixXd;
 
 UndirectedGraph::UndirectedGraph() {
+<<<<<<< HEAD
+=======
     cout<<"Create a UndirectedGraph"<<endl;
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
 };
 
 UndirectedGraph::UndirectedGraph(HyperGraph &hypergraph) : graph(hypergraph.number_of_nodes()) {
@@ -83,7 +86,10 @@ UndirectedGraph::UndirectedGraph(UndirectedGraph &graph_template, set<size_t> su
 }
 
 UndirectedGraph::~UndirectedGraph() {
+<<<<<<< HEAD
+=======
     cout<<"Destroy UndirectedGraph"<<endl;
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
 }
 
 

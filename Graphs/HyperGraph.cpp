@@ -8,7 +8,12 @@
 using namespace std;
 
 
+<<<<<<< HEAD
+HyperGraph::HyperGraph() {
+};
+=======
 HyperGraph::HyperGraph() = default;
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
 
 HyperGraph::HyperGraph(string const& db_file_path, string const& info_file_path) {
     set_predicate_argument_types_from_file(info_file_path);
@@ -88,7 +93,15 @@ HyperGraph::HyperGraph(UndirectedGraph &graph, HyperGraph &hypergraph_template) 
     }
 }
 
+<<<<<<< HEAD
+
+
+HyperGraph::~HyperGraph() {
+
+}
+=======
 HyperGraph::~HyperGraph() = default;
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
 
 void HyperGraph::set_predicate_argument_types_from_file(string const& info_file_path) {
     fstream info_file;
@@ -220,15 +233,25 @@ int HyperGraph::get_estimated_graph_diameter() {
     return this->estimated_graph_diameter;
 }
 
+<<<<<<< HEAD
+pair<size_t, size_t> HyperGraph::get_random_edge_and_neighbor_of_node(size_t const& node, mt19937 rng) {
+    vector<size_t> potential_edges = this->memberships[node]; //TODO transform to vector
+    size_t edge_id = uniform_random(0,potential_edges.size()-1, rng);
+=======
 pair<size_t, size_t> HyperGraph::get_random_edge_and_neighbor_of_node(size_t const& node) {
     vector<size_t> potential_edges = this->memberships[node]; //TODO transform to vector
     size_t edge_id = uniform_random(0,potential_edges.size()-1);
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
     size_t chosen_edge = potential_edges[edge_id];
     vector<size_t> nodes_of_edge = this->edges[chosen_edge];
     // Find the node in the vector, as we don't want to select the same node in the next step
     vector<size_t>::iterator position = find(nodes_of_edge.begin(), nodes_of_edge.end(), node); //find node in vector
     nodes_of_edge.erase(position); //remove the node by index
+<<<<<<< HEAD
+    size_t neighbor_id = uniform_random(0, nodes_of_edge.size()-1, rng);
+=======
     size_t neighbor_id = uniform_random(0, nodes_of_edge.size()-1);
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
     size_t neighbor = nodes_of_edge[neighbor_id];
     return {chosen_edge, neighbor};
 }

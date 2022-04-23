@@ -22,12 +22,21 @@ private:
 public:
     Communities(HyperGraph hypergraph, RandomWalkerConfig config);
     ~Communities();
+<<<<<<< HEAD
+
+    void print();
+    Community get_community(size_t &source_node, RandomWalkerConfig config);
+    size_t size();
+    HyperGraph &get_hypergraph();
+    map<size_t, Community> get_communities();
+=======
     size_t size();
     HyperGraph &get_hypergraph();
     void print();
     map<size_t, Community> get_communities();
     Community get_community(size_t &source_node, RandomWalkerConfig config);
 
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
 
 };
 #endif //FASTER_COMMUNITIES_H

@@ -1,0 +1,496 @@
+#START_GRAPH  #COMS 71
+
+#START_DB 0 #COM 1 #NUM_ATOMS 2 
+actor(NODE_3)
+movie(NODE_61,NODE_3)
+#END_DB
+
+#START_DB 1 #COM 1 #NUM_ATOMS 4 
+actor(NODE_3)
+actor(NODE_4)
+movie(NODE_61,NODE_3)
+movie(NODE_61,NODE_4)
+#END_DB
+
+#START_DB 2 #COM 1 #NUM_ATOMS 4 
+actor(NODE_3)
+actor(NODE_5)
+movie(NODE_61,NODE_3)
+movie(NODE_61,NODE_5)
+#END_DB
+
+#START_DB 3 #COM 1 #NUM_ATOMS 4 
+actor(NODE_3)
+actor(NODE_6)
+movie(NODE_61,NODE_3)
+movie(NODE_61,NODE_6)
+#END_DB
+
+#START_DB 4 #COM 1 #NUM_ATOMS 4 
+actor(NODE_3)
+actor(NODE_9)
+movie(NODE_61,NODE_3)
+movie(NODE_61,NODE_9)
+#END_DB
+
+#START_DB 5 #COM 1 #NUM_ATOMS 4 
+actor(NODE_13)
+actor(NODE_3)
+movie(NODE_61,NODE_13)
+movie(NODE_61,NODE_3)
+#END_DB
+
+#START_DB 6 #COM 1 #NUM_ATOMS 4 
+actor(NODE_17)
+actor(NODE_3)
+movie(NODE_61,NODE_17)
+movie(NODE_61,NODE_3)
+#END_DB
+
+#START_DB 7 #COM 1 #NUM_ATOMS 4 
+actor(NODE_19)
+actor(NODE_3)
+movie(NODE_61,NODE_19)
+movie(NODE_61,NODE_3)
+#END_DB
+
+#START_DB 8 #COM 1 #NUM_ATOMS 4 
+actor(NODE_22)
+actor(NODE_3)
+movie(NODE_61,NODE_22)
+movie(NODE_61,NODE_3)
+#END_DB
+
+#START_DB 9 #COM 1 #NUM_ATOMS 4 
+actor(NODE_28)
+actor(NODE_3)
+movie(NODE_61,NODE_28)
+movie(NODE_61,NODE_3)
+#END_DB
+
+#START_DB 10 #COM 1 #NUM_ATOMS 4 
+actor(NODE_3)
+actor(NODE_42)
+movie(NODE_61,NODE_3)
+movie(NODE_61,NODE_42)
+#END_DB
+
+#START_DB 11 #COM 1 #NUM_ATOMS 4 
+actor(NODE_3)
+actor(NODE_44)
+movie(NODE_61,NODE_3)
+movie(NODE_61,NODE_44)
+#END_DB
+
+#START_DB 12 #COM 1 #NUM_ATOMS 4 
+actor(NODE_3)
+actor(NODE_55)
+movie(NODE_61,NODE_3)
+movie(NODE_61,NODE_55)
+#END_DB
+
+#START_DB 13 #COM 1 #NUM_ATOMS 4 
+actor(NODE_3)
+actor(NODE_56)
+movie(NODE_61,NODE_3)
+movie(NODE_61,NODE_56)
+#END_DB
+
+#START_DB 14 #COM 1 #NUM_ATOMS 2 
+actor(NODE_3)
+movie(NODE_61,NODE_3)
+#END_DB
+
+#START_DB 15 #COM 1 #NUM_ATOMS 3 
+actor(NODE_3)
+gender(NODE_3,NODE_63)
+movie(NODE_61,NODE_3)
+#END_DB
+
+#START_DB 0 #COM 1 #NUM_ATOMS 3 
+actor(NODE_20)
+director(NODE_0)
+workedUnder(NODE_20,NODE_0)
+#END_DB
+
+#START_DB 1 #COM 1 #NUM_ATOMS 5 
+actor(NODE_16)
+actor(NODE_20)
+director(NODE_0)
+workedUnder(NODE_16,NODE_0)
+workedUnder(NODE_20,NODE_0)
+#END_DB
+
+#START_DB 2 #COM 1 #NUM_ATOMS 3 
+actor(NODE_20)
+director(NODE_0)
+workedUnder(NODE_20,NODE_0)
+#END_DB
+
+#START_DB 3 #COM 1 #NUM_ATOMS 5 
+actor(NODE_20)
+actor(NODE_25)
+director(NODE_0)
+workedUnder(NODE_20,NODE_0)
+workedUnder(NODE_25,NODE_0)
+#END_DB
+
+#START_DB 4 #COM 1 #NUM_ATOMS 4 
+actor(NODE_20)
+director(NODE_0)
+genre(NODE_0,NODE_65)
+workedUnder(NODE_20,NODE_0)
+#END_DB
+
+#START_DB 5 #COM 1 #NUM_ATOMS 4 
+actor(NODE_20)
+director(NODE_0)
+genre(NODE_0,NODE_66)
+workedUnder(NODE_20,NODE_0)
+#END_DB
+
+#START_DB 6 #COM 1 #NUM_ATOMS 4 
+actor(NODE_20)
+director(NODE_0)
+genre(NODE_0,NODE_67)
+workedUnder(NODE_20,NODE_0)
+#END_DB
+
+#START_DB 7 #COM 1 #NUM_ATOMS 4 
+actor(NODE_20)
+director(NODE_0)
+genre(NODE_0,NODE_68)
+workedUnder(NODE_20,NODE_0)
+#END_DB
+
+#START_DB 0 #COM 1 #NUM_ATOMS 4 
+actor(NODE_11)
+actor(NODE_54)
+movie(NODE_58,NODE_11)
+movie(NODE_58,NODE_54)
+#END_DB
+
+#START_DB 1 #COM 1 #NUM_ATOMS 4 
+actor(NODE_26)
+actor(NODE_54)
+movie(NODE_58,NODE_26)
+movie(NODE_58,NODE_54)
+#END_DB
+
+#START_DB 2 #COM 1 #NUM_ATOMS 4 
+actor(NODE_38)
+actor(NODE_54)
+movie(NODE_58,NODE_38)
+movie(NODE_58,NODE_54)
+#END_DB
+
+#START_DB 3 #COM 1 #NUM_ATOMS 4 
+actor(NODE_46)
+actor(NODE_54)
+movie(NODE_58,NODE_46)
+movie(NODE_58,NODE_54)
+#END_DB
+
+#START_DB 4 #COM 1 #NUM_ATOMS 4 
+actor(NODE_50)
+actor(NODE_54)
+movie(NODE_58,NODE_50)
+movie(NODE_58,NODE_54)
+#END_DB
+
+#START_DB 5 #COM 1 #NUM_ATOMS 4 
+actor(NODE_51)
+actor(NODE_54)
+movie(NODE_58,NODE_51)
+movie(NODE_58,NODE_54)
+#END_DB
+
+#START_DB 6 #COM 1 #NUM_ATOMS 2 
+actor(NODE_54)
+movie(NODE_58,NODE_54)
+#END_DB
+
+#START_DB 7 #COM 1 #NUM_ATOMS 4 
+actor(NODE_54)
+actor(NODE_57)
+movie(NODE_58,NODE_54)
+movie(NODE_58,NODE_57)
+#END_DB
+
+#START_DB 8 #COM 1 #NUM_ATOMS 2 
+actor(NODE_54)
+movie(NODE_58,NODE_54)
+#END_DB
+
+#START_DB 0 #COM 1 #NUM_ATOMS 4 
+actor(NODE_14)
+actor(NODE_39)
+movie(NODE_59,NODE_14)
+movie(NODE_59,NODE_39)
+#END_DB
+
+#START_DB 1 #COM 1 #NUM_ATOMS 4 
+actor(NODE_15)
+actor(NODE_39)
+movie(NODE_59,NODE_15)
+movie(NODE_59,NODE_39)
+#END_DB
+
+#START_DB 2 #COM 1 #NUM_ATOMS 4 
+actor(NODE_33)
+actor(NODE_39)
+movie(NODE_59,NODE_33)
+movie(NODE_59,NODE_39)
+#END_DB
+
+#START_DB 3 #COM 1 #NUM_ATOMS 4 
+actor(NODE_34)
+actor(NODE_39)
+movie(NODE_59,NODE_34)
+movie(NODE_59,NODE_39)
+#END_DB
+
+#START_DB 4 #COM 1 #NUM_ATOMS 4 
+actor(NODE_35)
+actor(NODE_39)
+movie(NODE_59,NODE_35)
+movie(NODE_59,NODE_39)
+#END_DB
+
+#START_DB 5 #COM 1 #NUM_ATOMS 2 
+actor(NODE_39)
+movie(NODE_59,NODE_39)
+#END_DB
+
+#START_DB 6 #COM 1 #NUM_ATOMS 4 
+actor(NODE_39)
+actor(NODE_40)
+movie(NODE_59,NODE_39)
+movie(NODE_59,NODE_40)
+#END_DB
+
+#START_DB 7 #COM 1 #NUM_ATOMS 4 
+actor(NODE_39)
+actor(NODE_41)
+movie(NODE_59,NODE_39)
+movie(NODE_59,NODE_41)
+#END_DB
+
+#START_DB 8 #COM 1 #NUM_ATOMS 2 
+actor(NODE_39)
+movie(NODE_59,NODE_39)
+#END_DB
+
+#START_DB 0 #COM 1 #NUM_ATOMS 3 
+actor(NODE_21)
+director(NODE_2)
+workedUnder(NODE_21,NODE_2)
+#END_DB
+
+#START_DB 1 #COM 1 #NUM_ATOMS 3 
+actor(NODE_21)
+director(NODE_2)
+workedUnder(NODE_21,NODE_2)
+#END_DB
+
+#START_DB 2 #COM 1 #NUM_ATOMS 5 
+actor(NODE_21)
+actor(NODE_23)
+director(NODE_2)
+workedUnder(NODE_21,NODE_2)
+workedUnder(NODE_23,NODE_2)
+#END_DB
+
+#START_DB 3 #COM 1 #NUM_ATOMS 5 
+actor(NODE_21)
+actor(NODE_29)
+director(NODE_2)
+workedUnder(NODE_21,NODE_2)
+workedUnder(NODE_29,NODE_2)
+#END_DB
+
+#START_DB 4 #COM 1 #NUM_ATOMS 5 
+actor(NODE_21)
+actor(NODE_30)
+director(NODE_2)
+workedUnder(NODE_21,NODE_2)
+workedUnder(NODE_30,NODE_2)
+#END_DB
+
+#START_DB 5 #COM 1 #NUM_ATOMS 5 
+actor(NODE_21)
+actor(NODE_45)
+director(NODE_2)
+workedUnder(NODE_21,NODE_2)
+workedUnder(NODE_45,NODE_2)
+#END_DB
+
+#START_DB 6 #COM 1 #NUM_ATOMS 5 
+actor(NODE_21)
+actor(NODE_48)
+director(NODE_2)
+workedUnder(NODE_21,NODE_2)
+workedUnder(NODE_48,NODE_2)
+#END_DB
+
+#START_DB 7 #COM 1 #NUM_ATOMS 5 
+actor(NODE_21)
+actor(NODE_53)
+director(NODE_2)
+workedUnder(NODE_21,NODE_2)
+workedUnder(NODE_53,NODE_2)
+#END_DB
+
+#START_DB 8 #COM 1 #NUM_ATOMS 4 
+actor(NODE_21)
+director(NODE_2)
+genre(NODE_2,NODE_64)
+workedUnder(NODE_21,NODE_2)
+#END_DB
+
+#START_DB 9 #COM 1 #NUM_ATOMS 4 
+actor(NODE_21)
+director(NODE_2)
+genre(NODE_2,NODE_69)
+workedUnder(NODE_21,NODE_2)
+#END_DB
+
+#START_DB 0 #COM 1 #NUM_ATOMS 7 
+actor(NODE_18)
+actor(NODE_47)
+director(NODE_1)
+gender(NODE_18,NODE_62)
+gender(NODE_47,NODE_62)
+workedUnder(NODE_18,NODE_1)
+workedUnder(NODE_47,NODE_1)
+#END_DB
+
+#START_DB 1 #COM 1 #NUM_ATOMS 4 
+actor(NODE_47)
+actor(NODE_7)
+gender(NODE_47,NODE_62)
+gender(NODE_7,NODE_62)
+#END_DB
+
+#START_DB 2 #COM 1 #NUM_ATOMS 4 
+actor(NODE_47)
+actor(NODE_8)
+gender(NODE_47,NODE_62)
+gender(NODE_8,NODE_62)
+#END_DB
+
+#START_DB 3 #COM 1 #NUM_ATOMS 4 
+actor(NODE_10)
+actor(NODE_47)
+gender(NODE_10,NODE_62)
+gender(NODE_47,NODE_62)
+#END_DB
+
+#START_DB 4 #COM 1 #NUM_ATOMS 4 
+actor(NODE_12)
+actor(NODE_47)
+gender(NODE_12,NODE_62)
+gender(NODE_47,NODE_62)
+#END_DB
+
+#START_DB 5 #COM 1 #NUM_ATOMS 4 
+actor(NODE_18)
+actor(NODE_47)
+gender(NODE_18,NODE_62)
+gender(NODE_47,NODE_62)
+#END_DB
+
+#START_DB 6 #COM 1 #NUM_ATOMS 4 
+actor(NODE_24)
+actor(NODE_47)
+gender(NODE_24,NODE_62)
+gender(NODE_47,NODE_62)
+#END_DB
+
+#START_DB 7 #COM 1 #NUM_ATOMS 4 
+actor(NODE_27)
+actor(NODE_47)
+gender(NODE_27,NODE_62)
+gender(NODE_47,NODE_62)
+#END_DB
+
+#START_DB 8 #COM 1 #NUM_ATOMS 4 
+actor(NODE_31)
+actor(NODE_47)
+gender(NODE_31,NODE_62)
+gender(NODE_47,NODE_62)
+#END_DB
+
+#START_DB 9 #COM 1 #NUM_ATOMS 4 
+actor(NODE_32)
+actor(NODE_47)
+gender(NODE_32,NODE_62)
+gender(NODE_47,NODE_62)
+#END_DB
+
+#START_DB 10 #COM 1 #NUM_ATOMS 4 
+actor(NODE_36)
+actor(NODE_47)
+gender(NODE_36,NODE_62)
+gender(NODE_47,NODE_62)
+#END_DB
+
+#START_DB 11 #COM 1 #NUM_ATOMS 4 
+actor(NODE_37)
+actor(NODE_47)
+gender(NODE_37,NODE_62)
+gender(NODE_47,NODE_62)
+#END_DB
+
+#START_DB 12 #COM 1 #NUM_ATOMS 4 
+actor(NODE_43)
+actor(NODE_47)
+gender(NODE_43,NODE_62)
+gender(NODE_47,NODE_62)
+#END_DB
+
+#START_DB 13 #COM 1 #NUM_ATOMS 2 
+actor(NODE_47)
+gender(NODE_47,NODE_62)
+#END_DB
+
+#START_DB 14 #COM 1 #NUM_ATOMS 4 
+actor(NODE_47)
+actor(NODE_49)
+gender(NODE_47,NODE_62)
+gender(NODE_49,NODE_62)
+#END_DB
+
+#START_DB 15 #COM 1 #NUM_ATOMS 4 
+actor(NODE_47)
+actor(NODE_52)
+gender(NODE_47,NODE_62)
+gender(NODE_52,NODE_62)
+#END_DB
+
+#START_DB 16 #COM 1 #NUM_ATOMS 6 
+actor(NODE_43)
+actor(NODE_47)
+gender(NODE_43,NODE_62)
+gender(NODE_47,NODE_62)
+movie(NODE_60,NODE_43)
+movie(NODE_60,NODE_47)
+#END_DB
+
+#START_DB 17 #COM 1 #NUM_ATOMS 2 
+actor(NODE_47)
+gender(NODE_47,NODE_62)
+#END_DB
+
+#START_DB 18 #COM 1 #NUM_ATOMS 8 
+actor(NODE_18)
+actor(NODE_47)
+director(NODE_1)
+gender(NODE_18,NODE_62)
+gender(NODE_47,NODE_62)
+genre(NODE_1,NODE_70)
+workedUnder(NODE_18,NODE_1)
+workedUnder(NODE_47,NODE_1)
+#END_DB
+
+#END_Graph

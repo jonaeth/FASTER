@@ -35,6 +35,11 @@ vector<T> flatten(std::vector<std::vector<T>> const &vec)
     return flattened;
 }
 
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
 template <typename T>
 vector<size_t> sort_indexes(const vector<T> &v, bool ascending) {
 

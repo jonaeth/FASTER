@@ -30,7 +30,11 @@ Communities::~Communities() {
 }
 
 size_t Communities::size() {
+<<<<<<< HEAD
+    return this->communities.size();
+=======
     this->communities.size();
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
 }
 
 HyperGraph &Communities::get_hypergraph() {
@@ -60,7 +64,11 @@ Community Communities::get_community(size_t &source_node, RandomWalkerConfig con
     random_walk_data.erase(source_node);
     set<size_t> single_nodes = {source_node}; //TODO CHeck if that works, as it is a reference
     vector<set<size_t>> clusters;
+<<<<<<< HEAD
+    double theta_sym = compute_theta_sym(config.theta_p,
+=======
     double theta_sym = compute_theta_sym(config.alpha_sym,
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
             this->random_walker.get_number_of_walks_ran(),
             this->random_walker.get_length_of_walk());
     set<NodeRandomWalkData> close_nodes = get_commonly_encountered_nodes(random_walk_data,
@@ -77,6 +85,10 @@ Community Communities::get_community(size_t &source_node, RandomWalkerConfig con
             pair<set<size_t>, vector<set<size_t>>> single_nodes_and_clusters_of_type =
                                                     cluster_nodes_by_path_similarity(nodes_of_type,
                                                     this->random_walker.get_number_of_walks_ran(),
+<<<<<<< HEAD
+                                                    this->random_walker.get_length_of_walk(),
+=======
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
                                                     theta_sym,
                                                     config);
             single_nodes.merge(single_nodes_and_clusters_of_type.first);
@@ -85,9 +97,12 @@ Community Communities::get_community(size_t &source_node, RandomWalkerConfig con
     }
     return Community(source_node, single_nodes, clusters);
 }
+<<<<<<< HEAD
+=======
 
 
 
 
 
 
+>>>>>>> b47f392532a1af69a0ec09940d45eef75bd3c0e8
